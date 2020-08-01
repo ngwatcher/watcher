@@ -3,7 +3,9 @@ This service will analyze data from [Nigeria's Open Treasury](https://opentreasu
 
 Fetch Data from source:
 - Powershell script to get data in xlsx from source
-- Convert xlsx to csv
+
+Python Script to
+- Convert xlsx to csv (use pandas for this)
 - Trim and feed data into Kusto database
     - define scalable schema for different types of data ( we start with payment )
         - pick out mdas, federal govt
