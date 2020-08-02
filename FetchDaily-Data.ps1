@@ -30,7 +30,7 @@ $endDate = Get-Date -Day 31 -Month 07 -Year 2020
 # Get candidate data path strings
 $DataPaths = @()
 while($startDate -le $endDate){
-    $MonthName = Get-Date $startDate -format MM | %{(Get-Culture).DateTimeFormat.GetMonthName($_)}
+    $MonthName = Get-Date $startDate -format MM | ForEach-Object{(Get-Culture).DateTimeFormat.GetMonthName($_)}
     $Year = Get-Date $startDate -format yyyy
     $SourceDayString = Get-Date $startDate -format dd-MM-yy
     $DestDayString = Get-Date $startDate -format MM-dd-yy
