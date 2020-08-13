@@ -1,7 +1,2 @@
-data/*
-
-watcherenv/*
-
 .vscode
-
 *.log

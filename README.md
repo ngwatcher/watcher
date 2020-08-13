@@ -13,11 +13,11 @@ This service will analyze data from [Nigeria's Open Treasury](https://opentreasu
 
 ## Architecture flow
 1. Fetch Data from source:
-    - Powershell script to get data in xlsx from open treasury source (see `./FetchDaily-Data.ps1`)
+    - Powershell script to get data in xlsx from open treasury source (see `./ingestion/FetchDaily-Data.ps1`)
         - This currently runs once but when deployed will be run on a daily basis ( and also attempt to get missing data )
 
-2. Preprocess & write all records into a queryable data store
-    - Python Script to parse through existing excel records in the `/data` directory and feed them into an Azure Data Explorer (Kusto) database.
+2. Preprocess & write all records into a queryable data store ( see `./ingestion/kustoingest.py`])
+    - Python Script to parse through existing excel records in the `./ingestion/data` directory and feed them into an Azure Data Explorer (Kusto) database.
         - This currently runs once but when deployed will be run automatically right after the data fetch from the source
 
 3. Present answers to questions in an easy to understand way

@@ -24,8 +24,8 @@ $excelApp = New-Object -ComObject Excel.Application
 $excelApp.DisplayAlerts = $false 
 
 # Get the date periods in the right format
-$startDate = Get-Date -Day 29 -Month 01 -Year 2020
-$endDate = Get-Date -Day 31 -Month 07 -Year 2020
+$startDate = Get-Date -Day 05 -Month 07 -Year 2020
+$endDate = Get-Date -Day 09 -Month 08 -Year 2020
 
 # Get candidate data path strings
 $DataPaths = @()
