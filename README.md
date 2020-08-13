@@ -2,7 +2,7 @@
 This service will analyze data from [Nigeria's Open Treasury](https://opentreasury.gov.ng) and discover insights across different verticals
 
 ## What questions do we need answered by the data
-1. What is the government spending the most on (monthly, weekly)
+1. What is the government spending the most on (monthly, weekly) (people, consultants)
     - What Organizations
     - What beneificaries
     - What grouping does this spending belong to (infra, defence etc.)
